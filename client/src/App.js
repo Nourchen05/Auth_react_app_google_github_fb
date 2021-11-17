@@ -1,7 +1,8 @@
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
-import Home from "./pages/Home";
-import Post from "./pages/Post";
+import Home from "./pages/Home/Home";
+import Login from "./pages/Login/Login";
+import Post from "./pages/Post/Post";
 
 //Arrow function
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
     <div>
       <NavBar />
 
-      <Post />
+      <Login />
     </div>
   );
 };
