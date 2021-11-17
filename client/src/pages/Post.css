@@ -1,0 +1,11 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.postImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
