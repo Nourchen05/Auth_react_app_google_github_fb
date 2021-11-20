@@ -26,3 +26,10 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
