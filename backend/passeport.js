@@ -16,3 +16,11 @@ passport.use(
     }
   )
 );
+
+passeport.serializerUser((user, done) => {
+  done(null, user);
+});
+
+passeport.deserializerUser((user, done) => {
+  done(null, user);
+});

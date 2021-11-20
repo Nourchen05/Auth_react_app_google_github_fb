@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const cors=require("cors")
+const passportSetup=require("./passeport")
 const cookieSession = require("cookie-session");
 const passport = require("passport");
 
