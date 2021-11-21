@@ -33,3 +33,5 @@ router.get(
     failureRedirect: "/login/filed",
   })
 );
+
+module.exports = router;

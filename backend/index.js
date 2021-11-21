@@ -4,6 +4,7 @@ const cors=require("cors")
 const passportSetup=require("./passeport")
 const cookieSession = require("cookie-session");
 const passport = require("passport");
+const authRoute=require("./routes/auth")
 
 app.use(
   cookieSession({
@@ -21,6 +22,8 @@ app.use(cors({
     method="GET,POST,PUT,DELETE",
     credentials:true,
 }))
+
+app.use("/auth",authRoute)
 
 app.listen("5000", () => {
   console.log("server is running");
