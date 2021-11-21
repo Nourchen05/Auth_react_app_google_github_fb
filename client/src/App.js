@@ -30,7 +30,9 @@ const App = () => {
           console.log(err);
         });
     };
+    getUser();
   }, []);
+  //console.log(user);
   return (
     <BrowserRouter>
       <NavBar user={user} />
