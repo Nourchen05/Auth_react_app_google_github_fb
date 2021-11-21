@@ -34,4 +34,13 @@ router.get(
   })
 );
 
+router.get("/github", passport.authenticate("github", { scope: ["profile"] }));
+router.get(
+  "/github/callback",
+  passport.authenticate("github", {
+    successRedirect: CLEINT_URL,
+    failureRedirect: "/login/filed",
+  })
+);
+
 module.exports = router;
